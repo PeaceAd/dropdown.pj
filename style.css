@@ -1,0 +1,86 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(table.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+}
+.menu-bar {
+  background: rgb(0, 100, 0);
+  text-align: center;
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: white;
+}
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 15px;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.active,
+.menu-bar ul li:hover {
+  background: #2bab0d;
+  border-radius: 3px;
+}
+.menu-bar .bi {
+  margin-right: 8px;
+}
+.menu-bar1 {
+  display: none;
+}
+.menu-bar ul li:hover .menu-bar1 {
+  display: block;
+  position: absolute;
+  background: rgb(0, 100, 0);
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.menu-bar ul li:hover .menu-bar1 ul {
+  display: block;
+  margin: 10px;
+}
+.menu-bar ul li:hover .menu-bar1 ul li {
+  width: 150px;
+  padding: 8px;
+  border-bottom: 1px dotted white;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+.menu-bar ul li:hover .menu-bar1 ul li:last-child {
+  border-bottom: none;
+}
+.menu-bar ul li:hover .menu-bar1 ul li a:hover {
+  color: #b2ff00;
+}
+.bi-caret-right-fill {
+  float: right;
+}
+.hover-me1 {
+  display: none;
+}
+.hover-me:hover .hover-me1 {
+  position: absolute;
+  display: block;
+  margin-top: -40px;
+  margin-left: 140px;
+  background-color: rgb(0, 100, 0);
+}
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  padding-top: 180px;
+  font-size: 100px;
+}
+span {
+  color: #2bab0d;
+}
